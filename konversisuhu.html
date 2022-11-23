@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu</title>
+    <link href="bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap5/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="test.js"></script>
+    <style>
+        .grs{padding-top: 20px;}
+        .grs01{display: none;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Konversi Suhu</h1>
+        <div class="form-group">
+            <div class="row">
+                <label>Nilai Suhu</label>
+                <div class="col">
+                    <input type="number" id="txNilai" class="form-control">
+                </div>
+                <div class="col">
+                    <select class="form-control" id="txMODE">
+                        <option selected>Pilih Satuan Sumber</option>
+                        <option>Celcius</option>
+                        <option>Fahrenheit</option>
+                        <option>Rheamur</option>
+                        <option>Kelvin</option>
+                    </select> 
+                </div>
+            </div>
+            <div class="row grs">
+                <hr class="grs01">
+                <h2>Result</h2>
+            </div>
+            <div class="row">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item HC">
+                      <h2 class="accordion-header" id="HeadCelcius">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Celcius
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div id="txResCelcius"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item HF">
+                      <h2 class="accordion-header" id="HeadFahrenheit">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Fahrenheit
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div id="txResFahrenheit"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item HK">
+                      <h2 class="accordion-header" id="HeadKelvin">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Kelvin
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div id="txResKelvin"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item HR">
+                        <h2 class="accordion-header" id="HeadReamur">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Rheamur
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <div id="txResReamur"></div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+
+        </div>        
+    </div>
+</body>
+</html>
